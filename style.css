@@ -1,0 +1,1874 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+::selection {
+    color: #fff;
+    background-color: #20c997;
+}
+/*section-1*/
+/*navbar home section*/
+.nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.nav-logo {
+    width: 8%;
+}
+.nav-logo img {
+    width: 100%;
+}
+.nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 75%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.nav ul a {
+    padding: 0 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+.nav .list-item a,.nav ul a:hover {
+    color: #20c997;
+}
+/*home section*/
+.home {
+    background-image: url(img/intro-bg.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    width: 100%;
+}
+/*setting icon*/
+.setting {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    top: 28%;
+    right: 0;
+    border-radius: 0.25rem 0 0 0.25rem;
+    background-color: #555;
+}
+.setting img {
+    width: 90%;
+    padding: 0.2rem 0 0 0.5rem;
+}
+.home-layer {
+    background-color: rgba(17, 20, 24, 0.8);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.welcome-prg1,.home-layer h1,.welcome-prg2,.home-layer button {
+    font-family: "Poppins", sans-serif;
+}
+.welcome-prg1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.home-layer h1 {
+    font-weight: 600;
+    padding: 1.2rem 0;
+    font-size: 4rem;
+    line-height: 1.3;
+}
+.home-layer h1::after {
+    content: "|";
+    animation-name: typing;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+/*keyframes h1*/
+@keyframes typing {
+/*Keyframes I'm Simone Olivia*/
+0% {content: "I|";}
+1% {content: "I'|";}
+3% {content: "I'm|";}
+4% {content: "I'm |";}
+6% {content: "I'm S|";}
+7% {content: "I'm Si|";}
+9% {content: "I'm Sim|";}
+10% {content: "I'm Simo|";}
+12% {content: "I'm Simon|";}
+13% {content: "I'm Simone|";}
+15% {content: "I'm Simone |";}
+16% {content: "I'm Simone O|";}
+18% {content: "I'm Simone Ol|";}
+19% {content: "I'm Simone Oli|";}
+21% {content: "I'm Simone Oliv|";}
+22% {content: "I'm Simone Olivi|";}
+24% {content: "I'm Simone Olivia|";}
+25% {content: "I'm Simone Olivia|";}
+27% {content: "I'm Simone Olivia|";}
+27.5% {content: "I'm Simone Olivi|";}
+28% {content: "I'm Simone Oliv|";}
+28.5% {content: "I'm Simone Oli|";}
+29% {content: "I'm Simone Ol|";}
+29.5% {content: "I'm Simone O|";}
+30% {content: "I'm Simone |";}
+30.5% {content: "I'm Simone|";}
+31% {content: "I'm Simon|";}
+31.5% {content: "I'm Simo|";}
+32% {content: "I'm Sim|";}
+32.5% {content: "I'm Si|";}
+33% {content: "I'm S|";}
+33.5% {content: "I'm |";}
+/*keyframes I'm a Freelancer*/
+34.5% {content: "I'm a|";}
+35.5% {content: "I'm a F|";}
+36.5% {content: "I'm a Fr|";}
+37.5% {content: "I'm a Fre|";}
+38.5% {content: "I'm a Free|";}
+39.5% {content: "I'm a Freel|";}
+40.5% {content: "I'm a Freela|";}
+41.5% {content: "I'm a Freelan|";}
+42.5% {content: "I'm a Freelanc|";}
+43.5% {content: "I'm a Freelance|";}
+44.5% {content: "I'm a Freelancer|";}
+45.5% {content: "I'm a Freelancer.|";}
+46.5% {content: "I'm a Freelancer.|";}
+47.5% {content: "I'm a Freelancer.|";}
+48% {content: "I'm a Freelancer|";}
+49.5% {content: "I'm a Freelance|";}
+50% {content: "I'm a Freelanc|";}
+50.5% {content: "I'm a Freelan|";}
+51% {content: "I'm a Freela|";}
+51.5% {content: "I'm a Freel|";}
+52% {content: "I'm a Free|";}
+52.5% {content: "I'm a Fre|";}
+53% {content: "I'm a Fr|";}
+53.5% {content: "I'm a F|";}
+54% {content: "I'm a |";}
+/*keyframes I'm a Photographer*/
+55% {content: "I'm a P|";}
+57% {content: "I'm a Ph|";}
+58% {content: "I'm a Pho|";}
+60% {content: "I'm a Phot|";}
+61% {content: "I'm a Photo|";}
+63% {content: "I'm a Photog|";}
+64% {content: "I'm a Photogr|";}
+66% {content: "I'm a Photogra|";}
+67% {content: "I'm a Photograp|";}
+69% {content: "I'm a Photograph|";}
+70% {content: "I'm a Photographe|";}
+72% {content: "I'm a Photographer|";}
+73% {content: "I'm a Photographer.|";}
+75% {content: "I'm a Photographer.|";}
+76% {content: "I'm a Photographer.|";}
+76.5% {content: "I'm a Photographer|";}
+77% {content: "I'm a Photographe|";}
+77.5% {content: "I'm a Photograph|";}
+78% {content: "I'm a Photograp|";}
+78.5% {content: "I'm a Photogra|";}
+79% {content: "I'm a Photogr|";}
+79.5% {content: "I'm a Photo|";}
+80% {content: "I'm a Phot|";}
+80.5% {content: "I'm a Pho|";}
+81% {content: "I'm a Ph|";}
+81.5% {content: "I'm a P|";}
+82% {content: "I'm a |";}
+/*keyframes I'm a Designer*/
+83% {content: "I'm a D|";}
+84% {content: "I'm a De|";}
+85% {content: "I'm a Des|";}
+86% {content: "I'm a Desi|";}
+87% {content: "I'm a Desig|";}
+88% {content: "I'm a Design|";}
+89% {content: "I'm a Designe|";}
+90% {content: "I'm a Designer|";}
+91% {content: "I'm a Designer.|";}
+92% {content: "I'm a Designer.|";}
+93% {content: "I'm a Designer.|";}
+93.5% {content: "I'm a Designer|";}
+94% {content: "I'm a Designe|";}
+94.5% {content: "I'm a Design|";}
+95% {content: "I'm a Desig|";}
+95.5% {content: "I'm a Desi|";}
+96% {content: "I'm a Des|";}
+96.5% {content: "I'm a De|";}
+97% {content: "I'm a D|";}
+97.5% {content: "I'm a |";}
+98% {content: "I'm a|";}
+98.5% {content: "I'm |";}
+99% {content: "I'm|";}
+99.5% {content: "I'|";}
+99.9% {content: "I|";}
+100% {content: "|";}
+}
+/*End keyframes*/
+.welcome-prg2 {
+    color: #dee3e4;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.75rem;
+}
+.home-layer button {
+    background-color: transparent;
+    color: #20c997;
+    border: 0.175rem solid #20c997;
+    padding: 0.75rem 2.6rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 50rem;
+    transition: all 0.5s ease;
+}
+.home-layer button:hover {
+    background-color: #20c997;
+    color: #fff;
+}
+/*section-1 mediaQuries*/
+@media screen and (max-width:768px) {
+.nav,.nav ul {
+    flex-direction: column;
+}
+.nav {
+    margin: 0;
+    padding: 1.2rem 0;
+}
+.nav-logo {
+    width: 25%;
+    padding: 0 0 1rem 1rem;
+}
+.nav-logo img,.nav ul {
+    width: 100%;
+}
+.nav ul {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.6rem;
+}
+.nav ul li {
+    border-bottom: 0.1rem solid #303030;
+    padding: 0.6rem 0;
+}
+.home-layer h1 {
+    font-size: 2.8rem;
+}
+.setting {
+    z-index: -1;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+.nav,.nav ul {
+    flex-direction: column;
+}
+.nav {
+    margin: 0;
+    padding: 1.2rem 0;
+}
+.nav-logo {
+    width: 12%;
+    padding: 0 0 1rem 1rem;
+}
+.nav-logo img,.nav ul {
+    width: 100%;
+}
+.nav ul {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.6rem;
+}
+.nav ul li {
+    border-bottom: 1px solid #303030;
+    padding: 0.6rem 0;
+}
+.home-layer h1 {
+    font-size: 3.5rem;
+}   
+.setting {
+    z-index: -1;
+}
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+.nav ul {
+    width: 80%;
+}
+}
+/*End Home section*/
+/*ABOUT ME Section-2*/
+.About-me {
+    margin: 6rem 0 2rem;
+}
+.section-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 5rem;
+}
+.header {
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+}
+.header h2,.header p {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    font-weight: 600;
+}
+.header h2 {
+    top: 0%;
+    right: 26%;
+    color: #dee3e4;
+    opacity: 0.4;
+    font-size: 8rem;
+}
+.header p::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0.01rem;
+    background-color: #20c997;
+    height: 0.15rem;
+    width: 5rem;
+}
+.header p {
+    padding-bottom: 0.3rem;
+    color: #212529;
+    font-size: 2.25rem;
+    top: 40%;
+    right: 40%;
+}
+.item-sec2 {
+    width: 62%;
+}
+.item-sec2 h2,.item-sec2 p,.item-sec2-list ul,.btn-sec2 a {
+    font-family: "Poppins", sans-serif; 
+}
+.item-sec2 h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #252b33;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+.item-sec2 span {
+    color: #20c997;
+}
+.item-sec2 p {
+    line-height: 1.8;
+}
+.item-sec2 p,.item-sec2-list ul{
+    font-size: 1rem;
+    font-weight: 400; 
+    color: #4c4d4d;
+}
+.item-sec2-list {
+    width: 28%;
+    padding: 0 1rem 1rem;
+}
+.item-sec2-list ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+.item-sec2-list ul span {
+    font-weight: 600;
+}
+
+.item-sec2-list ul a {
+    color: #20c997;
+    text-decoration: none;
+}
+.item-sec2-list ul li {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.7rem 0;
+}
+.btn-sec2 {
+    background-color: #20c997;
+    border: 0.175rem solid #20c997;
+    padding: 0.75rem 2.6rem;
+    border-radius: 50rem;
+    transition: all 0.5s ease;
+    margin: 1.5rem 0 0 1rem;
+}
+.btn-sec2 a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btn-sec2:hover {
+    box-shadow: 0rem 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+/*section-2 mediaQuries*/
+@media screen and (max-width:600px) {
+.section-2 {
+    padding: 0;
+    flex-direction: column;
+}
+.header h2 {
+    font-size: 4.5rem;
+    top: 18%;
+    right: 15%;
+}
+.header p {
+    top: 30%;
+    right: 25%;
+}
+.item-sec2 ,.item-sec2-list{
+    width: 100%;  
+}
+.item-sec2 {
+    text-align: center;
+}
+.item-sec2-list {
+    margin-top: 3rem;
+}
+.btn-sec2 {
+    padding: 0.75rem 2.2rem;
+    margin: 1.5rem 0 0;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.section-2 {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.header h2 {
+    font-size: 4.5rem;
+    top: 18%;
+    right: 25%;
+}
+.header p {
+    top: 35%;
+    right: 30%;
+}
+.item-sec2,.item-sec2-list{
+    width: 80%;  
+}
+.item-sec2 {
+    text-align: center;
+    padding-top: 2rem;
+}
+.item-sec2-list {
+    margin-top: 3rem;
+}
+.btn-sec2 {
+    padding: 0.75rem 2.2rem;
+    margin: 1.5rem 0 0;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+.section-2 {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.header h2 {
+    font-size: 7rem;
+    top: 5%;
+    right: 20%;
+}
+.header p {
+    top: 35%;
+    right: 35%;
+}
+.item-sec2,.item-sec2-list{
+    width: 70%;
+}
+.item-sec2 {
+    text-align: center;
+    padding-top: 2rem;
+}
+.item-sec2-list {
+    margin-top: 3rem;
+}
+.btn-sec2 {
+    padding: 0.75rem 2.2rem;
+    margin: 1.5rem 0 0;
+}
+}
+/*End section-2*/
+/*section-3*/
+.section-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 6rem;
+}
+.container-3 {
+    width: 80%;
+    display: flex;
+    text-align: center;
+}
+.item-sec3 {
+    width: 25%;
+    position: relative;
+}
+.item-sec3::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-left: 1px dotted #e0dede;
+}
+.item-sec3 h4,.item-sec3 p{
+    font-family: "Poppins", sans-serif;  
+}
+.item-sec3 h4 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.3;
+    color: #6c757d;
+}
+.item-sec3 p {
+    line-height: 1.8;
+    color: #4c4d4d;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/*section-3 mediaQuries*/
+@media screen and (max-width:600px) {
+.container-3 {
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.item-sec3 {
+    width: 50%;
+}
+.item-sec3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: auto;
+    left: 0;
+    bottom: 5.6rem;
+    border-bottom: 1px dotted #e0dede;
+}
+.item-sec3 h4 {
+    font-size: 3rem;
+
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.container-3 {
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+}
+.item-sec3 {
+    width: 50%;
+}
+.item-sec3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: auto;
+    left: 0;
+    bottom: 5.6rem;
+    border-bottom: 1px dotted #e0dede;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.container-3 {
+    width: 90%;
+}
+}
+/*End section-3*/
+/*section-4*/
+.what-I-Do {
+    background-color: #f8f9fa;
+    padding: 0 7rem 6rem;
+}
+.section-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5rem 0.2rem;
+}
+.header-1 {
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+}
+.header-1 h2,.header-1 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    position: absolute;
+}
+.header-1 h2 {
+    top: 0%;
+    right: 22%;
+    color: #dee3e4;
+    opacity: 0.4;
+    font-size: 8rem;
+}
+.header-1 p::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0.01rem;
+    background-color: #20c997;
+    height: 0.15rem;
+    width: 5rem;
+}
+.header-1 p {
+    padding-bottom: 0.3rem;
+    color: #212529;
+    font-size: 2.25rem;
+    top: 40%;
+    right: 40%;
+}
+.item-sec4 {
+    width: 45%;
+    margin: 1.2rem;
+    padding: 0.2rem 0;
+    display: flex;
+}
+.item-sec4-content {
+    width: 75%;
+}
+.item-sec4-content h3,.item-sec4-content p{
+    font-family: "Poppins", sans-serif;  
+}
+.item-sec4-content h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #252b33;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+}
+.item-sec4-content p {
+    line-height: 1.8;
+    color: #4c4d4d;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.item-sec4-logo {
+    width: 20%;
+}
+.item-sec4-logo img {
+    width: 70%;
+    border-radius: 0.3rem;
+    box-shadow: 0.05rem 0.05rem 0.4rem gainsboro;
+}
+/*section-4 mediaQuries*/
+@media screen and (max-width:600px) {
+.what-I-Do,.section-4 {
+    padding: 0;
+}
+.section-4 {
+    flex-direction: column;
+    width: 95%;
+}
+.header-1 h2 {
+    font-size: 4.5rem;
+    top: 15%;
+    right: 15%;
+}
+.header-1 p {
+    top: 30%;
+    right: 25%;
+}
+.item-sec4 {
+    width: 100%;
+}
+.item-sec4-content {
+    width: 80%;
+}
+.item-sec4-logo {
+    width: 20%;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.what-I-Do {
+    padding: 0 0 0 5rem;
+}
+.section-4 {
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+}
+.header-1 h2 {
+    font-size: 4.5rem;
+    top: 15%;
+    right: 28%;
+}
+.header-1 p {
+    top: 30%;
+    right: 38%;
+}
+.item-sec4,.item-sec4-content {
+    width: 100%;
+}
+.item-sec4-logo {
+    width: 20%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.what-I-Do,.section-4 {
+    padding: 0;
+}
+.header-1 h2 {
+    font-size: 6rem;
+    top: 14%;
+    right: 25%;
+}
+.item-sec4-content {
+    width: 70%;
+}
+}
+/*End section-4*/
+/*Resume section-5*/
+.Resume-sec5 {
+    padding: 0 4rem;
+    margin-top: 1rem;
+}
+.section-5 {
+    display: flex;
+    justify-content: center;
+    padding: 0 2.5rem;
+    margin-top: 1rem;
+}
+.section-5 h2,.years,.item-sec5 h3,.university,.prg,.header-2 h2,.header-2 p,.container-5 h2,.progress-bar p,.btn-1{
+    font-family: "Poppins", sans-serif;  
+}
+.section-5 h2,.item-sec5 h3,.container-5 h2{
+    color: #252b33;
+}
+.section-5 h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.years {
+    background-color: #20c997;
+    width: 19%;
+    height: 3%;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.2rem;
+    padding-top: 0.3rem;
+}
+.item-sec5 h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+.university {
+    color: #dc3545;
+}
+.university,.prg{
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;  
+}
+.prg {
+    color: #4c4d4d;
+}
+.My-Education {
+    margin: 1rem;
+}
+
+.item-sec5 {
+    padding: 2rem;
+    margin: 1.2rem 0;
+    border: 0.1rem solid #dee2e6;
+    border-radius: 0.3rem;
+}
+.My-Experience {
+    margin: 1rem;
+}
+.header-2 {
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+}
+.header-2 h2 {
+    position: absolute;
+    top: 0%;
+    right: 24%;
+    color: #dee3e4;
+    opacity: 0.4;
+    font-weight: 600;
+    font-size: 8rem;
+}
+.header-2 p::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0.01rem;
+    background-color: #20c997;
+    height: 0.15rem;
+    width: 5rem;
+}
+.header-2 p {
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+    color: #212529;
+    font-size: 2.25rem;
+    position: absolute;
+    top: 40%;
+    right: 45%;
+}
+.My-skills {
+    padding: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.container-5 {
+    padding-left: 1rem;
+}
+.container-5 h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding-left: 0.8rem;
+    text-align: left;
+}
+.clear-fix {
+    clear: both;
+}
+.progress-bar {
+    float: left;
+    width: 48%;
+    margin: 0.3rem 0.5rem;
+    padding: 0.5rem;
+}
+.progress-bar p {
+    text-align: left;
+    margin: 0.2rem 0;
+    font-weight: 500;
+    color: #212529;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.progress-bar span {
+    float: right;
+}
+.progress-bar-1 {
+    background-color: #d4d3d3;
+    width: 100%;
+    border-radius: 1rem;
+    height: 1.5%;
+}
+.skill {
+    background-color: #20c997;
+    color: white;
+    padding: 0.3rem;
+    height: 1.5%;
+    border-radius: 1rem;
+}
+.width-1 {
+    width: 65%;
+}
+.width-2 {
+    width: 70%;
+}
+.width-3 {
+    width: 95%;
+}
+.width-4 {
+    width: 60%;
+}
+.width-5 {
+    width: 80%;
+}
+.width-6 {
+    width: 99%;
+}
+.btn-1 {
+    margin-top: 3.5rem;
+    background-color: transparent;
+    border: 0.175rem solid #6c757d;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.75rem 3rem;
+    border-radius: 50rem;
+    transition: all 0.5s ease;
+}
+.btn-1 img {
+    width: 13%;
+}
+.btn-1 a {
+    color: #6c757d;
+    text-decoration: none;
+}
+.btn-1:hover {
+    background-color: #6c757d;
+}
+.btn-1 a:hover {
+    color: #fff;
+}
+/*section5-mediaQuries*/
+@media screen and (max-width:600px) {
+.Resume-sec5, .section-5,.My-skills,.container-5 h2 {
+    padding: 0;
+}
+.section-5 {
+    flex-direction: column;
+}
+.years {
+    width: 28%;
+}
+.header-2 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 20%;
+}
+.header-2 p {
+    top: 43%;
+    right: 40%;
+}
+.progress-bar {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.container-5 {
+    padding-right: 2rem;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.Resume-sec5 , .container-5 h2 {
+    padding: 0;
+}
+.section-5 {
+    flex-direction: column;
+}
+.years {
+    width: 25%;
+}
+.header-2 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 25%;
+}
+.header-2 p {
+    top: 43%;
+    right: 40%;
+}
+.My-skills,.section-5 {
+    padding: 3rem;
+}
+.progress-bar {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.container-5 {
+    padding-right: 2rem;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.Resume-sec5,.section-5,.My-skills,.container-5 h2{
+    padding: 0;
+}
+.section-5 {
+    width: 90%;
+    margin-left: 3rem;
+}
+.years {
+    width: 35%;
+}
+.header-2 h2 {
+    font-size: 6rem;
+    top: 18%;
+    right: 20%;
+}
+.header-2 p {
+    top: 43%;
+    right: 40%;
+}
+.progress-bar {
+    width: 47%;
+    margin: 0.5rem;
+}
+.container-5 {
+    padding: 2rem;
+}
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+.Resume-sec5,.section-5 {
+    padding: 0;
+}
+.section-5 {
+    width: 90%;
+    margin-left: 4rem;
+}
+.years {
+    width: 32%;
+}
+.header-2 h2 {
+    font-size: 6rem;
+    top: 18%;
+    right: 24%;
+}
+.header-2 p {
+    top: 43%;
+    right: 40%;
+}
+}
+/*End section-5*/
+/*section-6 My Work*/
+.my-work-sec6 {
+    padding: 1rem 6rem;
+    background-color: #f8f9fa;
+}
+.header-3 {
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+}
+.header-3 h2,.header-3 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    position: absolute;
+}
+.header-3 h2 {
+    top: 0%;
+    right: 20%;
+    color: #dee3e4;
+    opacity: 0.4;
+    font-size: 8rem;
+}
+.header-3 p::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0.01rem;
+    background-color: #20c997;
+    height: 0.15rem;
+    width: 5rem;
+}
+.header-3 p {
+    padding-bottom: 0.3rem;
+    color: #212529;
+    font-size: 2.25rem;
+    top: 40%;
+    right: 45%;
+}
+.sec6-list {
+    margin-bottom: 2rem;
+}
+.sec6-list ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+.list-item-sec6 {
+    width: 7%;
+}
+.sec6-list a {
+    font-family: "Poppins", sans-serif;
+    color: #5e5d5d;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+.list-color a {
+    color: #20c997;
+    padding: 0 1rem;
+}
+.list-color a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -1rem;
+    background-color: #20c997;
+    height: 0.18rem;
+    width: 4rem;
+}
+.item-sec6 {
+    position: relative;
+    margin: 1rem 0;
+}
+.item-sec6,.item-sec6 img{
+   width: 100%;  
+}
+.item-sec6 img {
+    border-radius: 0.4rem;
+}
+.item-caption {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0.4rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.item-caption h5 {
+    font-size: 1.4rem;
+    letter-spacing: 0.09rem;
+    color: #fff;
+    font-weight: 500;
+}
+.item-caption p {
+    font-size: 1rem;
+    color: #dee3e4;
+    font-weight: 400;
+}
+.item-caption:hover {
+    opacity: 1;
+}
+.con-1,.con-2,.con-3 {
+    margin: 0 0.6rem;
+}
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*section-6 mediaQuries*/
+@media screen and (max-width:600px) {
+.my-work-sec6 {
+    padding: 0;
+}
+.header-3 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 10%;
+}
+.header-3 p {
+    top: 43%;
+    right: 30%;
+}
+.list-item-sec6 {
+    width: 14%;
+}
+.sec6-list a {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.list-color a::after {
+    width: 3rem;
+}
+.projects {
+    flex-direction: column;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.my-work-sec6 {
+    padding: 0;
+}
+.header-3 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 20%;
+}
+.header-3 p {
+    top: 43%;
+    right: 38%;
+}
+.list-item-sec6 {
+    width: 14%;
+}
+.sec6-list a {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.list-color a::after {
+    width: 3rem;
+}
+.projects {
+    flex-direction: column;
+    width: 100%;
+}
+.con-1,.con-2,.con-3 {
+    padding: 0 5rem;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.my-work-sec6 {
+    padding: 0 1rem;
+}
+.header-3 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 25%;
+}
+.header-3 p {
+    top: 43%;
+    right: 38%;
+}
+.list-item-sec6 {
+    width: 14%;
+}
+.sec6-list a {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.list-color a::after {
+    width: 3rem;
+}
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+.my-work-sec6 {
+    padding: 0 2rem;
+}
+.header-3 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 28%;
+}
+.header-3 p {
+    top: 43%;
+    right: 38%;
+}
+.list-item-sec6 {
+    width: 14%;
+}
+.sec6-list a {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.list-color a::after {
+    width: 3rem;
+}
+}
+/*Client speak section-7*/
+.Client-Speak {
+    margin: 3rem 0 5rem;
+}
+.header-4 {
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+}
+.header-4 h2,.header-4 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    position: absolute;
+}
+.header-4 h2 {
+    top: 0%;
+    right: 20%;
+    color: #dee3e4;
+    opacity: 0.4;
+    font-size: 8rem;
+}
+.header-4 p::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0.01rem;
+    background-color: #20c997;
+    height: 0.15rem;
+    width: 5rem;
+}
+.header-4 p {
+    padding-bottom: 0.3rem;
+    color: #212529;
+    font-size: 2.25rem;
+    top: 40%;
+    right: 43%;
+}
+.container-7 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.item-sec7 {
+    background-color: #f8f9fa;
+    width: 40%;
+    margin: 5rem 1rem 2rem 0;
+    border-radius: 0.2rem;
+}
+.name {
+
+    padding-left: 1rem;
+}
+.img-sec7 {
+
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 1rem 2rem;
+}
+.img-sec7 img {
+    width: 13%;
+    border-radius: 50%;
+}
+.name h4,.name span,.item-sec7 p {
+    font-family: "Poppins", sans-serif;  
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.name h4,.item-sec7 p{
+    color: #212529; 
+}
+.name h4 {
+    font-weight: 600;
+}
+.name span {
+    font-weight: 500;
+    color: #6c757d;
+}
+.item-sec7 p {
+    padding: 0 3rem;
+    font-weight: 500;
+}
+.star-icon {
+    width: 40%;
+    padding: 2rem 3rem 4rem
+}
+.container-8 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.container-8:hover {
+    opacity: 1;
+}
+.border {
+    display: flex;
+    justify-content: center;
+    padding-right: 1rem;
+}
+.border-1 {
+    border: 1px solid #20c997;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.border-1::after {
+    width: 11px;
+    height: 11px;
+    content: "";
+    left: 25%;
+    top: 25%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #20c997;
+}
+.border-2 {
+    border: rgb(201, 197, 197) solid 1px;
+    background-color: rgb(201, 197, 197);
+    border-radius: 50%;
+    margin: 1.4rem 0 0;
+    height: 11px;
+    width: 11px;
+}
+/*section-7 mediaQuries*/
+@media screen and (max-width:600px) {
+.container-7, .container-8{
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.item-sec7 {
+    width: 90%;
+}
+.header-4 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 10%;
+}
+.header-4 p {
+    top: 43%;
+    right: 30%;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.container-7,.container-8 {
+    flex-direction: column;
+    padding-left: 5rem;
+}
+.item-sec7 {
+    width: 80%;
+}
+.header-4 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 15%;
+}
+.header-4 p {
+    top: 43%;
+    right: 30%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.container-7,.container-8 {
+    flex-direction: column;
+    padding-left: 3rem;
+}
+.item-sec7 {
+    width: 90%;
+}
+.header-4 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 15%;
+}
+.header-4 p {
+    top: 43%;
+    right: 30%;
+}
+.img-sec7 img {
+    width: 10%;
+    border-radius: 50%;
+}
+.star-icon {
+    width: 30%;
+    padding: 2rem 3rem 4rem
+}
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+.container-7,.container-8 {
+    padding: 0;
+}
+.item-sec7 {
+    width: 90%;
+}
+.header-4 h2 {
+    font-size: 6rem;
+    top: 10%;
+    right: 20%;
+}
+.header-4 p {
+    top: 43%;
+    right: 40%;
+}
+.img-sec7 img {
+    width: 10%;
+    border-radius: 50%;
+}
+.star-icon {
+    width: 40%;
+    padding: 2rem 3rem 4rem
+}
+}
+/*End section-7*/
+/*Get in Touch section-8*/
+.Get-in-Touch {
+    background-color: #f8f9fa;
+}
+.header-5 {
+    text-align: center;
+    position: relative;
+    padding: 5rem;
+}
+.header-5 h2,.header-5 p{
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+}
+.header-5 h2 {
+    top: 0%;
+    right: 28%;
+    color: #dee3e4;
+    opacity: 0.4;
+    font-size: 8rem;
+}
+.header-5 p::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0.01rem;
+    background-color: #20c997;
+    height: 0.15rem;
+    width: 5rem;
+}
+.header-5 p {
+    padding-bottom: 0.3rem;
+    color: #212529;
+    font-size: 2.25rem;
+    top: 40%;
+    right: 43%;
+}
+.container-9 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.item-sec8-1 {
+    width: 18%;
+    margin-right: 4rem;
+    padding: 1rem;
+}
+.item-sec8-1 img {
+    width: 19%;
+    vertical-align: middle;
+}
+.item-sec8-2 {
+    width: 70%;
+    padding: 1rem;
+}
+.name-email {
+    margin-right: 1rem;
+}
+.Name input {
+    float: left;
+}
+.Name input,.Email input{
+    width: 49%;
+}
+.Email input {
+    float: right;
+}
+.message textarea {
+    width: 96%;
+}
+.container-9 input,.message textarea,.container-9 h2,.container-9 p,.sumbit input{
+    font-family: "Poppins", sans-serif;
+}
+.container-9 input,.message textarea {
+    border: 0.1rem solid #dae1e3;
+    font-weight: 200;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 0.9rem;
+    transition: all 0.5s ease;
+
+}
+.container-9 h2,.container-9 p{
+    text-align: left;
+}
+.container-9 h2 {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.3rem;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.container-9 p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4c4d4d;
+    font-weight: 400;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.sumbit input {
+    background-color: #20c997;
+    border-color: #20c997;
+    font-size: 1rem;
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border-width: 2px;
+    border-radius: 50rem;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.sumbit input:hover {
+    box-shadow: 0rem 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+.Name input:hover,.Email input:hover,.message textarea:hover {
+    border: 1.5px solid #0d6efd;
+}
+@media screen and (max-width:600px) {
+.header-5 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 20%;
+}
+.header-5 p {
+    top: 43%;
+    right: 30%;
+}
+.container-9,.item-sec8-2{
+    padding: 0;
+}
+.container-9 {
+    flex-direction: column-reverse;
+}
+.item-sec8-1 {
+    width: 60%;
+    align-self: center;
+    margin-right: 1rem;
+}
+.item-sec8-1 img {
+    width: 15%;
+}
+.item-sec8-2,.Name input {
+    width: 100%;
+}
+.container-9 h2,.container-9 p {
+    text-align: center;
+}
+.Email input {
+    width: 96%;
+}
+.message textarea {
+    width: 93%;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.header-5 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 22%;
+}
+.header-5 p {
+    top: 43%;
+    right: 30%;
+}
+.container-9 {
+    flex-direction: column-reverse;
+    padding: 0 4rem;
+}
+.item-sec8-1 {
+    width: 60%;
+    align-self: center;
+    margin-right: 1rem;
+}
+.item-sec8-1 img {
+    width: 15%;
+}
+.item-sec8-2 {
+    padding: 0;
+}
+.container-9 h2,.container-9 p {
+    text-align: center;
+}
+.Name input,.item-sec8-2  {
+     width: 100%;
+}
+.Email input {
+    width: 97%;
+}
+.message textarea {
+    width: 95%;
+
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.header-5 h2 {
+    font-size: 4.2rem;
+    top: 28%;
+    right: 25%;
+}
+.header-5 p {
+    top: 43%;
+    right: 30%;
+}
+.container-9,.item-sec8-2 {
+    padding: 0;
+}
+.item-sec8-1 {
+    width: 33%;
+    margin-right: 1rem;
+}
+.item-sec8-1 img {
+    width: 15%;
+}
+.item-sec8-2 {
+    width: 70%;
+    margin-top: 0.8rem;
+}
+.Name input {
+    width: 100%;
+}
+.Email input {
+    width: 97%;
+}
+.message textarea {
+    width: 95%;
+}
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+.header-5 h2 {
+    font-size: 6rem;
+    top: 10%;
+    right: 28%;
+}
+.header-5 p {
+    top: 43%;
+    right: 40%;
+}
+.container-9 {
+    padding: 0;
+}
+.item-sec8-1 {
+    width: 33%;
+    margin-right: 1rem;
+}
+.item-sec8-1 img {
+    width: 15%;
+}
+.item-sec8-2 {
+    width: 70%;
+    padding: 0;
+    margin-top: 0.8rem;
+}
+.Name input {
+    width: 100%;
+}
+.Email input {
+    width: 97%;
+}
+.message textarea {
+    width: 95%;
+}
+}
+/*End section-8*/
+/*section-9*/
+.section-9 {
+    padding: 3rem 0;
+}
+.container-10 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+.copy-right {
+    width: 50%;
+    line-height: 1.8;
+    color: #252b33;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.copy-right span a {
+    text-decoration: none;
+    color: #20c997;
+    font-weight: bold;
+}
+.copyright-list {
+    width: 30%;
+}
+.border-3 {
+    position: relative;
+}
+.border-3::after {
+    content: "";
+    position: absolute;
+    height: 1.2rem;
+    width: 0.1rem;
+    background-color: grey;
+    top: 20%;
+    left: 0;
+    transform: translateX(-1.2rem);
+}
+.copyright-list ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    line-height: 1.8;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.copyright-list ul a {
+    text-decoration: none;
+    color: #252b33;
+}
+.copyright-list ul a:hover {
+    color: #20c997;
+}
+@media screen and (max-width:600px) {
+.container-10 {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+}
+.copy-right {
+    margin-bottom: 0.8rem;
+}
+.copyright-list,.copy-right {
+     width: 100%;
+}
+.border-3::after {
+    transform: translateX(-2.3rem);
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+.container-10 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+.copy-right {
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+.copyright-list {
+    width: 80%;
+}
+.border-3::after {
+    transform: translateX(-2.3rem);
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+.container-10 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+.copy-right {
+    width: 80%;
+    margin-bottom: 0.8rem;
+}
+.copyright-list {
+    width: 60%;
+}
+.border-3::after {
+    transform: translateX(-3rem);
+}
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+.container-10 {
+    padding: 2rem;
+}
+.copy-right {
+    width: 50%;
+    margin-bottom: 0.8rem;
+}
+.copyright-list {
+    width: 30%;
+
+}
+.border-3::after {
+    transform: translateX(-1rem);
+}
+}
